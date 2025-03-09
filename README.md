@@ -155,7 +155,7 @@ GET /recipes/random
 
 
 
-## Loom Video Prasentation
+## Loom Video Presentation
 
 - https://www.loom.com/share/045b9b4fb5e24433bfba43ba880c0e55?sid=965e60f4-606e-4656-aad1-662f4d9eb509
 
