@@ -145,13 +145,13 @@ GET /recipes/random
 
 - Backend Deployment
     - Live Demo: The application is hosted on Render
-    - Access it here: 
+    - Access it here: https://recipe-app-waou.onrender.com
 
 
 - Frontend Deployment
 
     - Live Demo: The application is hosted on Netlify.
-    - Access it here: 
+    - Access it here: https://app-recipe-management.netlify.app/
 
 ---
 
