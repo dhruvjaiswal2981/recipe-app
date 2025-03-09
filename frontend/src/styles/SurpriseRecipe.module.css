@@ -1,0 +1,95 @@
+/* Container Styling */
+.surpriseContainer {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 25px;
+    background: #fffaf3; /* Soft cream background */
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/* Surprise Me! Button */
+.button {
+    background: linear-gradient(135deg, #ff6f61, #ff9478);
+    color: white;
+    border: none;
+    padding: 14px 22px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: transform 0.2s ease-in-out, background 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Hover & Active Effects */
+.button:hover {
+    background: linear-gradient(135deg, #e65c50, #ff7f72);
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.button:active {
+    transform: scale(0.98);
+}
+
+/* Recipe Details Section */
+.recipeDetails {
+    margin-top: 20px;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    text-align: left;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Recipe Title */
+.recipeDetails h3 {
+    color: #ff6f61;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* Recipe Text */
+.recipeDetails p {
+    font-size: 1rem;
+    color: #333;
+    margin: 8px 0;
+    line-height: 1.5;
+}
+
+/* Highlighted Text */
+.recipeDetails strong {
+    color: #ff6f61;
+    font-weight: bold;
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 600px) {
+    .surpriseContainer {
+        padding: 20px;
+    }
+
+    .button {
+        font-size: 1rem;
+        padding: 12px 18px;
+    }
+
+    .recipeDetails {
+        padding: 15px;
+    }
+}

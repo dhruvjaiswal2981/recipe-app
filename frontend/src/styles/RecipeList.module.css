@@ -1,0 +1,78 @@
+/* Centered Container with Elegant Background */
+.recipeContainer {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 25px;
+    background: #fffaf3; /* Soft cream background */
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/* Recipe List Grid - Center Alignment */
+.recipeList {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    padding: 0;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Recipe Card Styling - Softer Look */
+.recipeCard {
+    background: linear-gradient(145deg, #ff6f61, #ff9478); /* Smooth gradient */
+    padding: 22px;
+    border-radius: 12px;
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    color: #fff; /* White text for better contrast */
+    font-weight: bold;
+    font-size: 1.2rem;
+    cursor: grab;
+    transition: transform 0.2s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Dragging Effect */
+.recipeCard:active {
+    cursor: grabbing;
+}
+
+.recipeCard:hover {
+    transform: scale(1.06);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Recipe Title Link - Better Visibility */
+.recipeLink {
+    text-decoration: none;
+    color: #ff6f61;
+    font-size: 1.2rem;
+    margin-top: 8px;
+    display: block;
+    transition: color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.recipeLink:hover {
+    color: black;
+    
+}
+
+/* Draggable Placeholder Styling */
+.placeholder {
+    background: rgba(255, 111, 97, 0.4);
+    border-radius: 12px;
+    height: 85px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 600px) {
+    .recipeList {
+        grid-template-columns: 1fr;
+    }
+
+    .recipeCard {
+        font-size: 1rem;
+    }
+}
